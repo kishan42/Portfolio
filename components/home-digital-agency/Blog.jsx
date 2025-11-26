@@ -92,7 +92,7 @@ function Blog() {
                     display: 'flex',
                     flexDirection: 'column',
                     height: '100%',
-                    minHeight: '420px',
+                    minHeight: '460px',
                   }}
                 >
                   <div className="info sub-title p-color d-flex align-items-center mb-20">
@@ -119,7 +119,16 @@ function Blog() {
                     <img src={post.image} alt={post.title} />
                   </div>
                   <div className="cont pt-30" style={{ marginTop: 'auto' }}>
-                    <h5>{post.title}</h5>
+                    <h5
+                      style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                      }}
+                    >
+                      {post.title}
+                    </h5>
                     <a
                       href={post.href}
                       target="_blank"

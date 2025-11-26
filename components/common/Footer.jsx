@@ -104,18 +104,15 @@ function Footer() {
           </div>
         </div>
         <div className="pt-30 pb-30 mt-80 bord-thin-top">
-          <div className="text-center">
-            <p className="fz-14">
-              (c) 2025 Kishan Kachhadiya. No bugs, just happy accidents.
-            </p>
-          </div>
+        <div className="text-center">
+          <p className="fz-14">
+            (c) 2025 Kishan Kachhadiya. No bugs, just happy accidents.
+          </p>
         </div>
       </div>
-      <div className="circle-blur">
-        <img src="/assets/imgs/patterns/blur1.png" alt="" />
-      </div>
-    </footer>
-  );
+    </div>
+  </footer>
+);
 }
 
 export default Footer;

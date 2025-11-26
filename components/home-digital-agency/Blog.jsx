@@ -85,8 +85,16 @@ function Blog() {
             data-swiper="container"
           >
             {posts.map((post) => (
-              <SwiperSlide key={post.href}>
-                <div className="item">
+              <SwiperSlide key={post.href} style={{ height: '100%' }}>
+                <div
+                  className="item"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: '100%',
+                    minHeight: '420px',
+                  }}
+                >
                   <div className="info sub-title p-color d-flex align-items-center mb-20">
                     <div>
                       <a
@@ -110,7 +118,7 @@ function Blog() {
                   <div className="img fit-img">
                     <img src={post.image} alt={post.title} />
                   </div>
-                  <div className="cont pt-30">
+                  <div className="cont pt-30" style={{ marginTop: 'auto' }}>
                     <h5>{post.title}</h5>
                     <a
                       href={post.href}

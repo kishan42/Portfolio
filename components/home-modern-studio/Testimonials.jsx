@@ -8,25 +8,25 @@ const testimonials = [
     title: 'AI & Data Quality',
     quote:
       'Kishan transformed our messy recipe data into structured, searchable nutrition in weeks. The RAG pipeline he built now powers accurate meal suggestions for our users.',
-    name: 'Rahul Mehta',
+    name: 'Rahul Virani',
     role: 'Founder, Fitshield',
-    img: '/assets/imgs/testim/t1.jpg',
+    img: '',
   },
   {
     title: 'Multilingual NLP',
     quote:
       'He fine-tuned NLLB and retrieval models across 22 Indic languages for our legal RAG workbench. The uplift in cross-lingual accuracy has been remarkable.',
-    name: 'Dr. Ananya Rao',
+    name: 'Dr. Prasenjit Majumder',
     role: 'Lead Researcher, IRLP Lab',
-    img: '/assets/imgs/testim/t2.jpg',
+    img: '',
   },
   {
     title: 'Product Analytics',
     quote:
       'From EDA to shipping a LoRA-tuned Gemma model, Kishan helped us lift engagement 3–6% and ship recommendations faster. Great partner for applied ML.',
-    name: 'Priya Desai',
-    role: 'Product Lead, Rootle.AI',
-    img: '/assets/imgs/testim/t3.jpg',
+    name: 'Rahul Desai',
+    role: 'Sales Head',
+    img: '',
   },
 ];
 
@@ -89,22 +89,25 @@ function Testimonials() {
             data-swiper="container"
           >
             {testimonials.map((item) => (
-              <SwiperSlide key={item.name}>
-                <div className="item">
-                  <div className="cont">
+              <SwiperSlide key={item.name} style={{ height: '100%' }}>
+                <div
+                  className="item"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: '100%',
+                    minHeight: '420px',
+                  }}
+                >
+                  <div className="cont" style={{ flex: 1 }}>
                     <h6 className="sub-title mb-15">{item.title}</h6>
                     <div className="text">
                       <p>{item.quote}</p>
                     </div>
                   </div>
-                  <div className="info">
+                  <div className="info" style={{ marginTop: 'auto' }}>
                     <div className="d-flex align-items-center">
-                      <div>
-                        <div className="img fit-img">
-                          <img src={item.img} alt={item.name} />
-                        </div>
-                      </div>
-                      <div className="ml-20">
+                      <div className="ml-0">
                         <h6 className="fz-18">{item.name}</h6>
                         <span className="p-color opacity-8 fz-15 mt-5">
                           {item.role}

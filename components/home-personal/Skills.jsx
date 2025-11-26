@@ -21,7 +21,6 @@ function Skills() {
                 <div className="img">
                   <img src="/assets/imgs/resume/s1.png" alt="" />
                 </div>
-                <span className="value">95%</span>
               </div>
               <h6 className="fz-18">Python Development</h6>
             </div>
@@ -32,7 +31,6 @@ function Skills() {
                 <div className="img">
                   <img src="/assets/imgs/resume/s2.png" alt="" />
                 </div>
-                <span className="value">90%</span>
               </div>
               <h6 className="fz-18">Machine Learning</h6>
             </div>
@@ -43,7 +41,6 @@ function Skills() {
                 <div className="img">
                   <img src="/assets/imgs/resume/s3.png" alt="" />
                 </div>
-                <span className="value">85%</span>
               </div>
               <h6 className="fz-18">Deep Learning</h6>
             </div>
@@ -54,7 +51,6 @@ function Skills() {
                 <div className="img">
                   <img src="/assets/imgs/resume/s5.png" alt="" />
                 </div>
-                <span className="value">84%</span>
               </div>
               <h6 className="fz-18">NLP</h6>
             </div>
@@ -65,7 +61,6 @@ function Skills() {
                 <div className="img">
                   <img src="/assets/imgs/resume/s4.png" alt="" />
                 </div>
-                <span className="value">78%</span>
               </div>
               <h6 className="fz-18">MLOps & Deployment</h6>
             </div>
@@ -76,7 +71,6 @@ function Skills() {
                 <div className="img">
                   <img src="/assets/imgs/resume/s6.png" alt="" />
                 </div>
-                <span className="value">90%</span>
               </div>
               <h6 className="fz-18">Generative Ai</h6>
             </div>

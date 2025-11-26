@@ -1,9 +1,7 @@
 'use client';
-import React, { useLayoutEffect } from 'react';
-import Image from 'next/image';
+import React, { useEffect, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
-
-const heroSrc = '/assets/imgs/header/p0.jpg';
+import loadBackgroudImages from '@/common/loadBackgroudImages';
 
 function Header() {
   useLayoutEffect(() => {
@@ -18,30 +16,18 @@ function Header() {
 
     return () => tl.kill();
   }, []);
+  useEffect(() => {
+    loadBackgroudImages();
+  }, []);
+
   return (
     <div
       id="home"
       className="header header-personal valign bg-img"
-      style={{ position: 'relative', overflow: 'hidden' }}
+      data-background="/assets/imgs/header/p0.jpg"
+      data-overlay-dark="2"
     >
-      <div style={{ position: 'absolute', inset: 0 }}>
-        <Image
-          src={heroSrc}
-          alt="Portrait of Kishan Kachhadiya"
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: 'cover' }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'rgba(0, 0, 0, 0.5)',
-          }}
-        />
-      </div>
-      <div className="container ontop" style={{ position: 'relative', zIndex: 1 }}>
+      <div className="container ontop">
         <div className="row">
           <div className="col-lg-7">
             <div className="caption">

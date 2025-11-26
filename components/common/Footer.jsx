@@ -47,59 +47,34 @@ function Footer() {
           </div>
           <div className="col-lg-3">
             <div className="column subscribe-minimal">
-              <h6 className="sub-title mb-30">Newsletter</h6>
-              <div className="form-group mb-40">
-                <input type="text" name="subscrib" placeholder="Your Email" />
-                <button>
+              <h6 className="sub-title mb-30">Project Inquiry</h6>
+              <form
+                action="mailto:kishankachhadiya823@gmail.com"
+                method="post"
+                encType="text/plain"
+                className="form-group mb-40 d-flex align-items-center"
+                style={{ gap: '12px' }}
+              >
+                <input
+                  type="text"
+                  name="message"
+                  placeholder="Your project inquiry"
+                  required
+                  style={{ flex: 1, paddingRight: '42px', minHeight: '44px' }}
+                />
+                <button
+                  type="submit"
+                  style={{
+                    minWidth: '44px',
+                    height: '44px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
                   <span className="ti-location-arrow"></span>
                 </button>
-              </div>
-              <ul className="rest social-icon d-flex align-items-center">
-                <li className="hover-this cursor-pointer">
-                  <a
-                    href="https://www.facebook.com/share/1E1jjX49Eu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Facebook profile"
-                    className="hover-anim"
-                  >
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a
-                    href="https://github.com/kishan42"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub profile"
-                    className="hover-anim"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a
-                    href="https://www.linkedin.com/in/kishan-kachhadiya-6677b9204/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn profile"
-                    className="hover-anim"
-                  >
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a
-                    href="https://www.instagram.com/kishan.kachhadiya._?igsh=MXF6Y21nYWl0azR4dg=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram profile"
-                    className="hover-anim"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
+              </form>
             </div>
           </div>
         </div>

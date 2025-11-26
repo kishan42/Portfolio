@@ -1,4 +1,4 @@
-# Webfolio (Next.js)
+# portfolio (Next.js)
 
 Personal portfolio built with Next.js and React. Includes hero, portfolio cards, skills, testimonials, blog carousel, and contact/footer.
 
